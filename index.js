@@ -72,7 +72,7 @@ async function run() {
       res.send(result);
     });
 
-    // to get single book
+    // to get single book data
     app.get("/book/:id", async (req, res) => {
       const id = req.params.id;
       const filter = { _id: new ObjectId(id) };
